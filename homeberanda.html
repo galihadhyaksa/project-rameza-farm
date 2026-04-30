@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Rameza Farm</title>
+
+    <!-- Fonts & CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="homeberanda.css" />
+    <link rel="stylesheet" href="navbar.css" />
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+
+    <!-- ================= TENTANG KAMI ================= -->
+    <section class="about-company" id="tentang">
+      <div class="about-wrapper">
+        <!-- Kiri: Teks -->
+        <div class="about-text">
+          <div class="section-line"></div>
+          <h2>Tentang Kami</h2>
+
+          <p>
+            Rumeza Egg Farm merupakan peternakan ayam petelur yang berfokus pada
+            produksi telur segar berkualitas tinggi. Kami menjaga kebersihan
+            kandang, kualitas pakan, serta kesehatan ayam agar telur yang
+            dihasilkan tetap higienis dan aman dikonsumsi setiap hari.
+          </p>
+
+          <p>
+            Dengan sistem pemanenan harian dan distribusi cepat, kami memastikan
+            telur sampai ke tangan konsumen dalam kondisi terbaik.
+          </p>
+
+          <a href="Tentang.html" class="about-btn">Lebih Detail</a>
+        </div>
+
+        <!-- Kanan: Gambar -->
+        <div class="about-image">
+          <div class="img-stack">
+            <img src="foto-kandang.jpeg" class="img img-front" alt="Kandang" />
+            <img
+              src="foto-kandang2.jpeg"
+              class="img img-back"
+              alt="Kandang 2"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUK & LAYANAN ================= -->
+    <section class="produk-section" id="produk">
+      <div class="produk-slider">
+        <h2 class="produk-title">Produk &amp; Layanan Kami</h2>
+
+        <div class="produk-track">
+          <!-- CARD 1 -->
+          <div class="produk-item">
+            <div
+              class="group relative max-w-xs overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <!-- Image -->
+              <div class="relative h-52 overflow-hidden">
+                <img
+                  src="bibit-ayam.jpg"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                  alt="Bibit Ayam"
+                />
+
+                <!-- Overlay gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+                ></div>
+
+                <!-- Badge -->
+                <span
+                  class="absolute left-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-xs font-semibold text-gray-900 shadow"
+                >
+                  Bibit Unggas
+                </span>
+              </div>
+
+              <!-- Content -->
+              <div class="space-y-3 p-5">
+                <!-- Title -->
+                <div class="flex items-start justify-between">
+                  <span class="text-xl font-bold leading-tight text-gray-800">
+                    Bibit Ayam
+                  </span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm leading-relaxed text-gray-500">
+                  Ayam petelur sehat siap produksi. Cocok untuk peternak pemula
+                  maupun skala usaha.
+                </p>
+
+                <!-- Button -->
+                <a
+                  href="AYAMJATINOM.html"
+                  class="mt-3 block w-full rounded-full bg-amber-500 py-3 text-center font-semibold tracking-wide text-white no-underline transition-all duration-300 hover:bg-amber-600 hover:shadow-xl hover:shadow-amber-300/40 active:scale-95"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-item">
+            <div
+              class="group relative max-w-xs overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <!-- Image -->
+              <div class="relative h-52 overflow-hidden">
+                <img
+                  src="ayam-petelur-afkir.jpg"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                  alt="Ayam Petelur"
+                />
+
+                <!-- Overlay gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+                ></div>
+
+                <!-- Badge -->
+                <span
+                  class="absolute left-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-xs font-semibold text-gray-900 shadow"
+                >
+                  Bibit Unggas
+                </span>
+              </div>
+
+              <!-- Content -->
+              <div class="space-y-3 p-5">
+                <!-- Title -->
+                <div class="flex items-start justify-between">
+                  <span class="text-xl font-bold leading-tight text-gray-800">
+                    Ayam Petelur
+                  </span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm leading-relaxed text-gray-500">
+                  Ayam petelur sehat siap produksi. Cocok untuk peternak pemula
+                  maupun skala usaha.
+                </p>
+
+                <!-- Button -->
+                <a
+                  href="#"
+                  class="mt-3 block w-full rounded-full bg-amber-500 py-3 text-center font-semibold tracking-wide text-white no-underline transition-all duration-300 hover:bg-amber-600 hover:shadow-xl hover:shadow-amber-300/40 active:scale-95"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="produk-item">
+            <div
+              class="group relative max-w-xs overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <!-- Image -->
+              <div class="relative h-52 overflow-hidden">
+                <img
+                  src="gambar-telur.jpg"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                  alt="Telur"
+                />
+
+                <!-- Overlay gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+                ></div>
+
+                <!-- Badge -->
+                <span
+                  class="absolute left-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-xs font-semibold text-gray-900 shadow"
+                >
+                  Unggulan
+                </span>
+              </div>
+
+              <!-- Content -->
+              <div class="space-y-3 p-5">
+                <!-- Title -->
+                <div class="flex items-start justify-between">
+                  <span class="text-xl font-bold leading-tight text-gray-800">
+                    Telur Ayam
+                  </span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm leading-relaxed text-gray-500">
+                  Ayam petelur sehat siap produksi. Cocok untuk peternak pemula
+                  maupun skala usaha.
+                </p>
+
+                <!-- Button -->
+                <a
+                  href="#"
+                  class="mt-3 block w-full rounded-full bg-amber-500 py-3 text-center font-semibold tracking-wide text-white no-underline transition-all duration-300 hover:bg-amber-600 hover:shadow-xl hover:shadow-amber-300/40 active:scale-95"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="produk-item">
+            <div
+              class="group relative max-w-xs overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <!-- Image -->
+              <div class="relative h-52 overflow-hidden">
+                <img
+                  src="pakan.jpeg"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                  alt="Pakan"
+                />
+
+                <!-- Overlay gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+                ></div>
+
+                <!-- Badge -->
+                <span
+                  class="absolute left-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-xs font-semibold text-gray-900 shadow"
+                >
+                  Pakan &amp; Pulet
+                </span>
+              </div>
+
+              <!-- Content -->
+              <div class="space-y-3 p-5">
+                <!-- Title -->
+                <div class="flex items-start justify-between">
+                  <span class="text-xl font-bold leading-tight text-gray-800">
+                    Pakan &amp; Pulet
+                  </span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm leading-relaxed text-gray-500">
+                  Ayam petelur sehat siap produksi. Cocok untuk peternak pemula
+                  maupun skala usaha.
+                </p>
+
+                <!-- Button -->
+                <a
+                  href="#"
+                  class="mt-3 block w-full rounded-full bg-amber-500 py-3 text-center font-semibold tracking-wide text-white no-underline transition-all duration-300 hover:bg-amber-600 hover:shadow-xl hover:shadow-amber-300/40 active:scale-95"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="produk-item">
+            <div
+              class="group relative max-w-xs overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <!-- Image -->
+              <div class="relative h-52 overflow-hidden">
+                <img
+                  src="obat-obatan.jpg"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                  alt="Obat Ayam"
+                />
+
+                <!-- Overlay gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+                ></div>
+
+                <!-- Badge -->
+                <span
+                  class="absolute left-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-xs font-semibold text-gray-900 shadow"
+                >
+                  Vitamin &amp; Obat
+                </span>
+              </div>
+
+              <!-- Content -->
+              <div class="space-y-3 p-5">
+                <!-- Title -->
+                <div class="flex items-start justify-between">
+                  <span class="text-xl font-bold leading-tight text-gray-800">
+                    Obat Ayam
+                  </span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm leading-relaxed text-gray-500">
+                  Ayam petelur sehat siap produksi. Cocok untuk peternak pemula
+                  maupun skala usaha.
+                </p>
+
+                <!-- Button -->
+                <a
+                  href="#"
+                  class="mt-3 block w-full rounded-full bg-amber-500 py-3 text-center font-semibold tracking-wide text-white no-underline transition-all duration-300 hover:bg-amber-600 hover:shadow-xl hover:shadow-amber-300/40 active:scale-95"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigasi Slider -->
+        <div class="produk-nav">
+          <button
+            type="button"
+            class="produk-nav-btn produk-nav-btn--prev"
+            aria-label="Produk sebelumnya"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            class="produk-nav-btn produk-nav-btn--next"
+            aria-label="Produk berikutnya"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HUBUNGI KAMI ================= -->
+    <section class="contact-section" id="kontak" data-aos="fade-up">
+      <div class="contact-container">
+        <!-- Kiri: Info -->
+        <div class="contact-info">
+          <div class="section-line"></div>
+          <h2 class="contact-title">Hubungi Kami</h2>
+          <p class="contact-desc">
+            Kami siap membantu Anda! Isi formulir di samping atau langsung
+            hubungi kami melalui WhatsApp untuk respons yang lebih cepat.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">WhatsApp</p>
+                <p class="contact-value">+62 812-XXXX-XXXX</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Lokasi</p>
+                <p class="contact-value">Jember, Jawa Timur</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Jam Operasional</p>
+                <p class="contact-value">Setiap Hari, 07.00 – 17.00 WIB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kanan: Form Card -->
+        <div class="contact-card">
+          <div class="contact-card-header">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <h3>Kami ingin menghubungi Anda</h3>
+              <p>Silakan isi formulir dan kami akan segera merespons</p>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <!-- Nama Lengkap -->
+            <div class="cf-group">
+                <label class="cf-label">Nama Lengkap <span>*</span></label>
+                <input type="text" id="cfName" class="cf-input" placeholder="Masukkan nama Anda" />
+            </div>
+
+            <!-- No. WhatsApp -->
+            <div class="cf-group">
+                <label class="cf-label">No. WhatsApp <span>*</span></label>
+                <div class="cf-phone">
+                  <span class="cf-phone-prefix">+62</span>
+                  <input type="tel" id="cfPhone" class="cf-input cf-input-phone" placeholder="812-XXXX-XXXX" />
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="cf-group">
+              <label class="cf-label">Email <span>*</span></label>
+              <input type="email" id="cfEmail" class="cf-input" placeholder="contoh@email.com" />
+            </div>
+
+            <!-- Tombol -->
+            <button type="submit" class="cf-btn-submit">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Hubungi Kami</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="homeberanda.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="navbar.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script src="footer.js"></script>
+  </body>
+</html>

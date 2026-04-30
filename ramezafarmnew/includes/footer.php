@@ -1,4 +1,4 @@
-<footer class="footer-farm text-light">
+<footer class="footer-farm text-light" id="kontak">
 
   <div class="footer-overlay">
     <div class="container py-5">
@@ -18,10 +18,10 @@
         <div class="col-md-3 mb-4">
           <h5>Produk & Layanan</h5>
           <ul class="list-unstyled footer-link-list">
-            <li><a href="#">Telur Ayam</a></li>
-            <li><a href="#">Bibit Unggas</a></li>
-            <li><a href="#">Pakan Ternak</a></li>
-            <li><a href="#">Konsultasi Peternakan</a></li>
+            <li><a href="detailproduk.php">Telur Ayam</a></li>
+            <li><a href="detailproduk.php">Bibit Unggas</a></li>
+            <li><a href="detailproduk.php">Pakan Ternak</a></li>
+            <li><a href="beranda.php#kontak">Konsultasi Peternakan</a></li>
           </ul>
         </div>
 
@@ -34,13 +34,17 @@
         </div>
 
         <!-- Maps -->
- <div class="map-box">
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5759078943884!2d113.74940887532571!3d-7.834627892186456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6e1000a5f7219%3A0xc02d2c91b9467ee!2sKandang%20Ayam%20Petelur%20(RAMEZA%20FARM)!5e0!3m2!1sen!2sus!4v1771948692631!5m2!1sen!2sus"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
+        <div class="col-md-3 mb-4">
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5759078943884!2d113.74940887532571!3d-7.834627892186456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6e1000a5f7219%3A0xc02d2c91b9467ee!2sKandang%20Ayam%20Petelur%20(RAMEZA%20FARM)!5e0!3m2!1sen!2sus!4v1771948692631!5m2!1sen!2sus"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
       <hr class="border-light opacity-25">
 
       <div class="text-center">

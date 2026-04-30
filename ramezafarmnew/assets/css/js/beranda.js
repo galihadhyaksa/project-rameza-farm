@@ -384,8 +384,7 @@ if (produkSlider && produkTrack && produkItems.length > 1) {
             const formData = new FormData(this);
 
             try {
-                // GANTI URL INI DENGAN ENDPOINT BACKEND ANDA
-                const response = await fetch('/api/submit-review', {
+                const response = await fetch(this.action || 'submit-review.php', {
                     method: 'POST',
                     body: formData
                 });
@@ -400,7 +399,7 @@ if (produkSlider && produkTrack && produkItems.length > 1) {
                     document.getElementById('fileName').textContent = 'Belum ada file dipilih';
                 } else {
                     // Error from server
-                    const error = await response.json();
+                    const error = await response.json().catch(() => ({}));
                     alert('Terjadi kesalahan: ' + (error.message || 'Gagal mengirim ulasan'));
                 }
             } catch (error) {

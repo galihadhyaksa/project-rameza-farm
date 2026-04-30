@@ -1,7 +1,7 @@
 <header class="navbar">
   <div class="nav-container">
     <div class="nav-logo">
-      <img src="LOGO AYAM WEB.png" alt="logo" />
+      <img src="assets/img/logo-ayam-web.png" alt="Logo Rameza Farm" />
       <span>Rameza Farm</span>
     </div>
 
@@ -9,7 +9,7 @@
       <a href="beranda.php">Beranda</a>
       <a href="tentang.php">Tentang</a>
       <a href="beranda.php#produk">Produk</a>
-      <a href="welcome.php#kontak">Pesan</a>
+      <a href="beranda.php#kontak">Pesan</a>
     </nav>
   </div>
 </header>

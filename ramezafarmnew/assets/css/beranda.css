@@ -25,6 +25,86 @@ h1,h2,h3,h4,h5,h6,p,span,a,li,button{
     font-family:'Poppins',sans-serif !important;
 }
 
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    width:100%;
+    background:rgba(255,255,255,.96);
+    box-shadow:0 8px 24px rgba(15,23,42,.08);
+    backdrop-filter:blur(10px);
+}
+
+.nav-container{
+    width:min(1180px, 92%);
+    margin:0 auto;
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+}
+
+.nav-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--text-dark);
+    font-weight:800;
+    font-size:20px;
+    white-space:nowrap;
+}
+
+.nav-logo img{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    object-fit:cover;
+    background:#fef3c7;
+}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+
+.nav-menu a{
+    color:#334155;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    padding:10px 14px;
+    border-radius:8px;
+    transition:background .2s ease, color .2s ease;
+}
+
+.nav-menu a:hover{
+    background:var(--blue-soft);
+    color:var(--blue-main);
+}
+
+@media (max-width: 640px){
+    .nav-container{
+        min-height:auto;
+        padding:14px 0;
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .nav-menu{
+        width:100%;
+        justify-content:flex-start;
+    }
+
+    .nav-menu a{
+        padding:8px 10px;
+    }
+}
 
 /* ================= ABOUT COMPANY ================= */
 
@@ -1135,7 +1215,7 @@ h1,h2,h3,h4,h5,h6,p,span,a,li,button{
 
 .footer-farm{
     position:relative;
-    background-image:url("foto-kandang3.jpeg");
+    background-image:url("../img/foto-kandang3.jpeg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;

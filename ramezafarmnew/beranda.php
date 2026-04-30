@@ -1,4 +1,5 @@
 <?php include 'includes/header.php'; ?>
+<?php include 'includes/navbar.php'; ?>
 
 
     <!-- ================= TENTANG KAMI ================= -->
@@ -10,7 +11,7 @@
           <h2>Tentang Kami</h2>
 
           <p>
-            Rumeza Egg Farm merupakan peternakan ayam petelur yang berfokus pada
+            Rameza Egg Farm merupakan peternakan ayam petelur yang berfokus pada
             produksi telur segar berkualitas tinggi. Kami menjaga kebersihan
             kandang, kualitas pakan, serta kesehatan ayam agar telur yang
             dihasilkan tetap higienis dan aman dikonsumsi setiap hari.
@@ -21,15 +22,15 @@
             telur sampai ke tangan konsumen dalam kondisi terbaik.
           </p>
 
-          <a href="Tentang.html" class="about-btn">Lebih Detail</a>
+          <a href="tentang.php" class="about-btn">Lebih Detail</a>
         </div>
 
         <!-- Kanan: Gambar -->
         <div class="about-image">
           <div class="img-stack">
-            <img src="foto-kandang.jpeg" class="img img-front" alt="Kandang" />
+            <img src="assets/img/foto-kandang.jpeg" class="img img-front" alt="Kandang" />
             <img
-              src="foto-kandang2.jpeg"
+              src="assets/img/foto-kandang2.jpeg"
               class="img img-back"
               alt="Kandang 2"
             />
@@ -52,7 +53,7 @@
               <!-- Image -->
               <div class="relative h-52 overflow-hidden">
                 <img
-                  src="bibit-ayam.jpg"
+                  src="assets/img/bibit-ayam.jpg"
                   class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                   alt="Bibit Ayam"
                 />
@@ -87,7 +88,7 @@
 
                 <!-- Button -->
                 <a
-                  href="AYAMJATINOM.html"
+                  href="detailproduk.php"
                   class="mt-3 block w-full rounded-full bg-amber-500 py-3 text-center font-semibold tracking-wide text-white no-underline transition-all duration-300 hover:bg-amber-600 hover:shadow-xl hover:shadow-amber-300/40 active:scale-95"
                 >
                   Lihat Detail
@@ -103,7 +104,7 @@
               <!-- Image -->
               <div class="relative h-52 overflow-hidden">
                 <img
-                  src="ayam-petelur-afkir.jpg"
+                  src="assets/img/ayam-petelur-afkir.jpg"
                   class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                   alt="Ayam Petelur"
                 />
@@ -155,7 +156,7 @@
               <!-- Image -->
               <div class="relative h-52 overflow-hidden">
                 <img
-                  src="gambar-telur.jpg"
+                  src="assets/img/gambar-telur.jpg"
                   class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                   alt="Telur"
                 />
@@ -207,7 +208,7 @@
               <!-- Image -->
               <div class="relative h-52 overflow-hidden">
                 <img
-                  src="pakan.jpeg"
+                  src="assets/img/pakan.jpeg"
                   class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                   alt="Pakan"
                 />
@@ -259,7 +260,7 @@
               <!-- Image -->
               <div class="relative h-52 overflow-hidden">
                 <img
-                  src="obat-obatan.jpg"
+                  src="assets/img/obat-obatan.jpg"
                   class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                   alt="Obat Ayam"
                 />
@@ -433,7 +434,7 @@
 
             <div class="review-product">
               <img
-                src="gambar-telur.jpg"
+                src="assets/img/gambar-telur.jpg"
                 alt="Telur Ayam"
                 class="product-thumb"
               />
@@ -483,7 +484,7 @@
 
             <div class="review-product">
               <img
-                src="gambar-telur.jpg"
+                src="assets/img/gambar-telur.jpg"
                 alt="Telur Ayam"
                 class="product-thumb"
               />
@@ -533,7 +534,7 @@
 
             <div class="review-product">
               <img
-                src="ayam-petelur-afkir.jpg"
+                src="assets/img/ayam-petelur-afkir.jpg"
                 alt="Ayam Petelur"
                 class="product-thumb"
               />
@@ -583,7 +584,7 @@
 
             <div class="review-product">
               <img
-                src="gambar-telur.jpg"
+                src="assets/img/gambar-telur.jpg"
                 alt="Telur Ayam"
                 class="product-thumb"
               />
@@ -631,7 +632,7 @@
             </div>
 
             <div class="review-product">
-              <img src="pakan.jpeg" alt="Pakan" class="product-thumb" />
+              <img src="assets/img/pakan.jpeg" alt="Pakan" class="product-thumb" />
               <span class="product-name">Pakan BR-1</span>
             </div>
 
@@ -678,7 +679,7 @@
 
             <div class="review-product">
               <img
-                src="gambar-telur.jpg"
+                src="assets/img/gambar-telur.jpg"
                 alt="Telur Ayam"
                 class="product-thumb"
               />
@@ -741,7 +742,7 @@
           <form
             id="reviewForm"
             method="POST"
-            action="/api/submit-review"
+            action="submit-review.php"
             enctype="multipart/form-data"
           >
             <!-- Nama Lengkap -->
@@ -758,7 +759,7 @@
                 required
                 minlength="3"
               />
-              <span class="error-message" id="nameError"></span>
+              <span class="error-message" id="reviewerNameError"></span>
             </div>
 
             <!-- Pekerjaan/Role -->
@@ -774,7 +775,7 @@
                 placeholder="Contoh: Pemilik Warung, Ibu Rumah Tangga"
                 required
               />
-              <span class="error-message" id="roleError"></span>
+              <span class="error-message" id="reviewerRoleError"></span>
             </div>
 
             <!-- Email -->
@@ -790,7 +791,7 @@
                 placeholder="email@contoh.com"
                 required
               />
-              <span class="error-message" id="emailError"></span>
+              <span class="error-message" id="reviewerEmailError"></span>
             </div>
 
             <!-- No. WhatsApp -->
@@ -806,7 +807,7 @@
                 placeholder="08123456789"
                 pattern="[0-9]{10,13}"
               />
-              <span class="error-message" id="phoneError"></span>
+              <span class="error-message" id="reviewerPhoneError"></span>
             </div>
 
             <!-- Rating Bintang -->
@@ -874,7 +875,7 @@
                   Paket Lainnya / Custom (Tulis di Ulasan)
                 </option>
               </select>
-              <span class="error-message" id="productError"></span>
+              <span class="error-message" id="productReviewedError"></span>
             </div>
 
             <!-- Foto Produk (Optional) -->
@@ -928,7 +929,7 @@
               <div class="char-counter">
                 <span id="charCount">0</span>/500 karakter
               </div>
-              <span class="error-message" id="textError"></span>
+              <span class="error-message" id="reviewTextError"></span>
             </div>
 
             <!-- Submit Buttons -->
@@ -980,7 +981,7 @@
 
     <!-- ================= SCRIPTS ================= -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="homeberanda.js"></script>
+    <script src="assets/css/js/beranda.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({

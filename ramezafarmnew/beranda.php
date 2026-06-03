@@ -40,8 +40,8 @@
     </section>
 
     <!-- ================= PRODUK & LAYANAN ================= -->
-    <section class="produk-section" id="produk">
-      <div class="produk-slider">
+    <section class="produk-section" id="produk"> <!-- Section Produk -->
+      <div class="produk-slider"> <!-- Container slider produk -->
         <h2 class="produk-title">Produk &amp; Layanan Kami</h2>
 
         <div class="produk-track">
